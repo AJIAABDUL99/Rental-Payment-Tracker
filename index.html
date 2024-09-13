@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenant Rental Payment Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to Tenant Rental Payment Tracker</h1>
+    <button id="logoutBtn">Logout</button>
+    <h2>Submit Rental Payment</h2>
+    <form id="paymentForm">
+        <input type="text" id="rentalType" placeholder="Rental Type" required>
+        <input type="number" id="amount" placeholder="Amount" required>
+        <button type="submit">Submit Payment</button>
+    </form>
+    <h2>Your Payment History</h2>
+<ul id="paymentList"></ul>
+
+    <script src="firebase-config.js"></script>
+    <script src="js/payment.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
